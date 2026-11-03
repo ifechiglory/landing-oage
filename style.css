@@ -1,0 +1,50 @@
+/* style.css
+   Global design tokens and the small amount of custom behaviour
+   that complements the Tailwind utility classes.
+*/
+
+:root {
+  --brand: #294E52;
+  --cyan: #2BCBDF;
+  --ink: #14292C;
+  --muted: #4A6366;
+  --surface: #FFFFFF;
+  --page: #F3F8F8;
+  --line: #CFE0E1;
+  --oncyan: #0F2A2E;
+}
+
+/* Each track controls its own disclosure icon. */
+.track-details > summary {
+  list-style: none;
+}
+
+.track-details > summary::-webkit-details-marker {
+  display: none;
+}
+
+.track-toggle::before {
+  content: "+";
+  display: inline-block;
+  line-height: 1;
+}
+
+.track-details[open] > summary .track-toggle::before {
+  content: "−";
+}
+
+/* Visible keyboard focus for interactive elements. */
+:focus-visible {
+  outline: 3px solid var(--cyan);
+  outline-offset: 3px;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
+  }
+}

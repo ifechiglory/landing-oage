@@ -1,289 +1,860 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>Cohort 8 | Attueyi Coding Academy</title>
-<meta name="description" content="Start 2027 with a skill that pays. Cohort 8 at Attueyi Coding Academy starts February 1. Eight tracks, physical or virtual, ₦100,000 instead of ₦200,000.">
-<meta property="og:title" content="Start 2027 with a skill that pays | Cohort 8">
-<meta property="og:description" content="Eight tracks, physical or virtual. ₦100,000 instead of ₦200,000. Classes start February 1.">
-<meta property="og:image" content="REPLACE-WITH-SHARE-IMAGE-URL">
-<meta property="og:type" content="website">
-<!-- AD PIXELS: paste your Meta Pixel / Google tag snippet here -->
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700;800&family=JetBrains+Mono:wght@500&family=Archivo+Black&display=swap" rel="stylesheet">
-<style>
-:root{
-  --bg:#F3F8F8; --surface:#FFFFFF; --ink:#14292C; --muted:#4A6366; --line:#CFE0E1;
-  --brand:#294E52; --cyan:#2BCBDF; --mist:#BBD0D2; --on-cyan:#0F2A2E;
-  --hero:#294E52; --on-hero:#F3F8F8; --link:#1B6F7A;
-  --head:"Poppins","Trebuchet MS",system-ui,sans-serif;
-  --body:"Inter",system-ui,-apple-system,"Segoe UI",sans-serif;
-  --mono:"JetBrains Mono",ui-monospace,Consolas,monospace;
-  --display:"Archivo Black","Poppins",Impact,sans-serif;
-  color-scheme:light; box-sizing:border-box;
-  padding-top:env(safe-area-inset-top,0px); padding-bottom:env(safe-area-inset-bottom,0px);
-}
-@media (prefers-color-scheme:dark){
-  :root:not([data-theme="light"]){--bg:#0C1A1C;--surface:#132628;--ink:#EAF4F4;--muted:#A5BDBF;--line:#274347;--hero:#132628;--link:#2BCBDF;color-scheme:dark}
-}
-:root[data-theme="dark"]{--bg:#0C1A1C;--surface:#132628;--ink:#EAF4F4;--muted:#A5BDBF;--line:#274347;--hero:#132628;--link:#2BCBDF;color-scheme:dark}
-*,*::before,*::after{box-sizing:inherit}
-html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
-body{margin:0;background:var(--bg);color:var(--ink);font:400 1.0625rem/1.65 var(--body);overflow-x:hidden}
-h1,h2,h3{font-family:var(--head);line-height:1.12;margin:0 0 .6em;text-wrap:balance}
-h1{font-size:clamp(2.3rem,8vw,4.6rem);font-weight:800;letter-spacing:-.025em}
-h2{font-size:clamp(1.6rem,4.5vw,2.4rem);font-weight:700}
-h3{font-size:1.1rem;font-weight:600;margin:0}
-p{margin:0 0 1em;max-width:64ch}
-a{color:var(--link)}
-:focus-visible{outline:3px solid var(--cyan);outline-offset:3px}
-header,main>section,footer{padding:clamp(1.5rem,5vw,3.5rem) clamp(1rem,5vw,4rem)}
-header{display:flex;flex-wrap:wrap;gap:1rem;align-items:center;justify-content:space-between;background:var(--brand);color:#F3F8F8;padding-block:.9rem}
-header img{display:block;height:44px;width:auto;min-width:44px}
-nav ul{display:flex;gap:1.2rem;list-style:none;margin:0;padding:0;align-items:center;flex-wrap:wrap}
-nav a{color:inherit;text-decoration:none;font-weight:500;font-size:.95rem}
-nav a:hover{text-decoration:underline}
-a[data-register],a[data-whatsapp]{display:inline-block;padding:.85rem 1.5rem;border-radius:.7rem;font-family:var(--head);font-weight:600;text-decoration:none;min-height:48px;margin:0 .6rem .6rem 0}
-a[data-register]{background:var(--cyan);color:var(--on-cyan)}
-a[data-register]:hover{filter:brightness(1.06)}
-a[data-whatsapp]{border:2px solid currentColor;color:inherit}
-a[data-whatsapp]:hover{background:rgba(127,127,127,.15)}
-small{color:var(--muted)}
-/* hero */
-main>section:first-child{position:relative;overflow:hidden;background:var(--hero);color:var(--on-hero);padding-block:clamp(2.5rem,9vw,6rem)}
-main>section:first-child::after{content:"8";position:absolute;right:-.05em;bottom:-.28em;font:clamp(14rem,45vw,32rem)/1 var(--display);color:rgba(43,203,223,.13);pointer-events:none}
-main>section:first-child>*{position:relative;z-index:1}
-.kicker{font:500 .85rem var(--mono);letter-spacing:.08em;text-transform:uppercase;color:var(--cyan);margin-bottom:1rem}
-main>section:first-child h1 em{font-style:normal;color:var(--cyan)}
-main>section:first-child p{font-size:1.15rem;opacity:.92}
-dl.facts{display:grid;grid-template-columns:repeat(auto-fit,minmax(9.5rem,1fr));gap:.9rem;margin:1.8rem 0;max-width:46rem}
-.facts section{border-top:3px solid var(--cyan);padding-top:.5rem}
-.facts dt{font:500 .75rem var(--mono);letter-spacing:.06em;text-transform:uppercase;opacity:.75}
-.facts dd{margin:.15rem 0 0;font:700 1.15rem var(--head)}
-.facts del{opacity:.6;font-weight:500;font-size:.95rem}
-/* tracks */
-ul.tracks{list-style:none;margin:2rem 0 0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fill,minmax(min(100%,17rem),1fr));align-items:start}
-.tracks>li{background:var(--surface);border:1px solid var(--line);border-left:6px solid var(--brand);border-radius:.4rem .9rem .9rem .4rem;padding:.9rem 1.2rem}
-.tracks summary{cursor:pointer;list-style:none;display:flex;justify-content:space-between;align-items:center;gap:1rem;min-height:44px}
-.tracks summary::-webkit-details-marker{display:none}
-.tracks summary::after{content:"+";font:700 1.6rem var(--head);color:var(--link)}
-.tracks details[open] summary::after{content:"\2212"}
-.tracks details[open] summary{margin-bottom:.6rem}
-.tracks p{margin:0 0 .8rem;color:var(--muted);font-size:.97rem}
-.tracks strong{color:var(--ink);font-size:.95rem}
-.tracks li ul{list-style:disc;margin:0 0 1rem;padding-left:1.2rem;color:var(--muted);font-size:.97rem}
-.tracks li li{background:none;border:0;padding:.1rem 0}
-/* included band */
-section[aria-labelledby="inc-h"]{background:var(--cyan);color:var(--on-cyan)}
-section[aria-labelledby="inc-h"] p{margin:0;font-size:1.1rem}
-/* how it works */
-ol.steps{list-style:none;counter-reset:s;margin:2rem 0 0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(14rem,1fr))}
-.steps li{counter-increment:s;background:var(--surface);border:1px solid var(--line);border-radius:.9rem;padding:1.2rem 1.3rem}
-.steps li::before{content:"0" counter(s);display:block;font:500 .85rem var(--mono);color:var(--link);margin-bottom:.4rem}
-.steps strong{display:block;font:600 1.1rem var(--head);margin-bottom:.2rem}
-.steps p{margin:0;color:var(--muted);font-size:.97rem}
-/* modes */
-section[aria-labelledby="modes-h"]{display:grid;gap:1.2rem;background:var(--surface);border-block:1px solid var(--line)}
-section[aria-labelledby="modes-h"] article{border:1px solid var(--line);border-top:6px solid var(--brand);border-radius:.9rem;padding:1.3rem;background:var(--bg)}
-section[aria-labelledby="modes-h"] article+article{border-top-color:var(--cyan)}
-section[aria-labelledby="modes-h"] article p{margin:0;color:var(--muted)}
-@media(min-width:760px){section[aria-labelledby="modes-h"]{grid-template-columns:1fr 1fr}section[aria-labelledby="modes-h"]>h2,section[aria-labelledby="modes-h"]>p{grid-column:1/-1}}
-/* fee */
-section[aria-labelledby="fees-h"]{text-align:center}
-section[aria-labelledby="fees-h"] p{margin-inline:auto}
-del{color:var(--muted)}
-.price{font:800 clamp(3.2rem,13vw,5.5rem)/1 var(--head);color:var(--ink);margin:.2rem auto 1rem}
-/* proof */
-ul.proof{list-style:none;margin:1.5rem 0;padding:0;display:grid;gap:1rem;grid-template-columns:repeat(auto-fit,minmax(min(100%,13rem),1fr))}
-.proof li{border-top:4px solid var(--cyan);padding-top:.7rem}
-.proof strong{display:block;font:700 1.3rem/1.2 var(--head);margin-bottom:.2rem}
-.proof p{margin:0;color:var(--muted);font-size:.97rem}
-figure{margin:1.5rem 0 0;padding:1.2rem 1.5rem;background:var(--surface);border-left:6px solid var(--cyan);border-radius:.4rem .9rem .9rem .4rem;max-width:42rem}
-figure blockquote{margin:0;font:600 1.2rem/1.45 var(--head)}
-figure blockquote p{margin:0}
-figcaption{margin-top:.6rem;color:var(--muted);font-size:.95rem}
-/* faq */
-section[aria-labelledby="faq-h"] details{background:var(--surface);border:1px solid var(--line);border-radius:.7rem;padding:.2rem 1.1rem;margin-bottom:.7rem;max-width:46rem}
-section[aria-labelledby="faq-h"] summary{cursor:pointer;font:600 1rem var(--head);min-height:48px;display:flex;align-items:center}
-section[aria-labelledby="faq-h"] details p{color:var(--muted);margin:0 0 1rem}
-/* final */
-section[aria-labelledby="final-h"]{background:var(--brand);color:#F3F8F8;text-align:center}
-section[aria-labelledby="final-h"] p{margin-inline:auto}
-footer{background:var(--hero);color:var(--on-hero);font-size:.95rem;border-top:1px solid rgba(255,255,255,.12)}
-footer p{margin:0 0 .3rem;max-width:none}
-footer a{color:var(--cyan)}
-nav[aria-label="Register"]{display:none}
-@media(max-width:760px){
-  body{padding-bottom:5rem}
-  nav[aria-label="Register"]{display:flex;position:fixed;left:0;right:0;bottom:0;z-index:5;padding:.7rem 1rem calc(.7rem + env(safe-area-inset-bottom,0px));background:var(--brand);border-top:1px solid rgba(255,255,255,.15)}
-  nav[aria-label="Register"] a{width:100%;text-align:center;margin:0}
-}
-@media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
-</style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Cohort 8 | Attueyi Coding Academy</title>
+  <meta name="description"
+    content="Start 2027 with a skill that pays. Cohort 8 at Attueyi Coding Academy starts February 1. Nine tracks, physical or virtual, ₦100,000 instead of ₦200,000.">
+
+  <meta property="og:title" content="Start 2027 with a skill that pays | Cohort 8">
+  <meta property="og:description"
+    content="Nine tracks, physical or virtual. ₦100,000 instead of ₦200,000. Classes start February 1.">
+  <meta property="og:image" content="REPLACE-WITH-SHARE-IMAGE-URL">
+  <meta property="og:type" content="website">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+  <link
+    href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@400;500;600;700;800&display=swap"
+    rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <script src="https://cdn.tailwindcss.com"></script>
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            brand: 'var(--brand)',
+            cyan: 'var(--cyan)',
+            ink: 'var(--ink)',
+            muted: 'var(--muted)',
+            surface: 'var(--surface)',
+            page: 'var(--page)',
+            line: 'var(--line)',
+            oncyan: 'var(--oncyan)'
+          },
+          fontFamily: {
+            heading: ['Poppins', 'sans-serif'],
+            body: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
 </head>
-<body>
 
-<header>
-  <a href="#top" aria-label="Attueyi Coding Academy home">
-    <!-- LOGO PLACEHOLDER: replace the src below with your logo file -->
-    <img src='https://res.cloudinary.com/dydbhxd13/image/upload/v1772269122/cropped_acalogo_b705525993.png' alt="Attueyi Coding Academy" width="160" height="44">
-  </a>
-  <nav aria-label="Page sections">
-    <ul>
-      <li><a href="#tracks">Tracks</a></li>
-      <li><a href="#how">How it works</a></li>
-      <li><a href="#fees">Fees</a></li>
-      <li><a href="#faq">FAQ</a></li>
-    </ul>
+<body class="bg-page text-ink font-body text-base leading-relaxed overflow-x-hidden">
+
+  <!-- HEADER -->
+  <header class="bg-brand text-page px-5 md:px-12 py-4 flex flex-wrap items-center justify-between gap-4 border-b border-muted sticky top-0 z-10">
+
+    <a href="#top" aria-label="Attueyi Coding Academy home">
+      <img src="https://res.cloudinary.com/dydbhxd13/image/upload/v1772269122/cropped_acalogo_b705525993.png"
+        alt="Attueyi Coding Academy" class="h-11 w-auto" width="160" height="44">
+    </a>
+
+    <nav aria-label="Page sections">
+      <ul class="flex flex-wrap items-center gap-5 text-sm font-medium">
+        <li><a href="#tracks" class="hover:text-cyan transition">Tracks</a></li>
+        <li><a href="#how" class="hover:text-cyan transition">How it works</a></li>
+        <li><a href="#fees" class="hover:text-cyan transition">Fees</a></li>
+        <li><a href="#faq" class="hover:text-cyan transition">FAQ</a></li>
+      </ul>
+    </nav>
+
+  </header>
+
+
+  <main id="top">
+
+    <!-- HERO SECTION -->
+    <section class="bg-brand text-page px-5 md:px-12 lg:px-20 py-16 md:py-24">
+
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center gap-12 lg:gap-16">
+
+        <!-- HERO CONTENT -->
+        <div class="flex-1 w-full">
+
+          <p class="text-cyan font-mono text-sm uppercase tracking-widest mb-5">
+            Attueyi Coding Academy · Cohort 8
+          </p>
+
+          <h1 class="font-heading font-extrabold text-4xl sm:text-5xl lg:text-6xl leading-tight mb-6">
+            Start 2027 with a skill that
+            <span class="text-cyan">pays.</span>
+          </h1>
+
+          <p class="text-lg md:text-xl text-page/90 max-w-xl mb-8">
+            9 tracks, hybrid learning mode, and get Cohort 8 at half price.
+            Your payment secures your seat.
+          </p>
+
+          <!-- KEY INFORMATION -->
+          <dl class="grid grid-cols-2 sm:grid-cols-4 gap-5 mb-9">
+
+            <div class="border-t-[3px] border-cyan pt-3">
+              <dt class="text-xs uppercase tracking-wider text-page/70">Registration</dt>
+              <dd class="font-heading font-bold text-lg mt-1">Opens November 30th</dd>
+            </div>
+
+            <div class="border-t-[3px] border-cyan pt-3">
+              <dt class="text-xs uppercase tracking-wider text-page/70">Orientation</dt>
+              <dd class="font-heading font-bold text-lg mt-1">January 30</dd>
+            </div>
+
+            <div class="border-t-[3px] border-cyan pt-3">
+              <dt class="text-xs uppercase tracking-wider text-page/70">Classes start</dt>
+              <dd class="font-heading font-bold text-lg mt-1">February 1</dd>
+            </div>
+
+            <div class="border-t-[3px] border-cyan pt-3">
+              <dt class="text-xs uppercase tracking-wider text-page/70">Course fee</dt>
+              <dd class="font-heading font-bold text-lg mt-1">
+                ₦100,000
+                <del class="text-sm font-normal opacity-60">₦200,000</del>
+              </dd>
+            </div>
+
+          </dl>
+
+          <!-- HERO BUTTONS -->
+          <div class="flex flex-wrap gap-4">
+
+            <a href="#" data-register
+              class="inline-flex items-center justify-center bg-cyan text-oncyan font-heading font-semibold px-7 py-4 rounded-xl hover:brightness-110 transition">
+              Register for Cohort 8
+            </a>
+
+            <a href="#" data-whatsapp
+              class="inline-flex items-center justify-center border-2 border-page text-page font-heading font-semibold px-7 py-4 rounded-xl hover:bg-white/10 transition">
+              Ask us on WhatsApp
+            </a>
+
+          </div>
+
+        </div>
+
+
+        <!-- HERO IMAGE PLACEHOLDER -->
+        <div class="flex-1 w-full max-w-xl">
+
+          <img src="banner1.jpg" alt="Hero banner" class="object-cover rounded-2xl">
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- TRACKS SECTION -->
+    <section id="tracks" class="px-5 md:px-12 lg:px-20 py-16 md:py-20">
+
+      <div class="max-w-7xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-4">
+          Choose your track
+        </h2>
+
+        <p class="text-muted mb-10">
+          Nine tracks, one cohort. Open a track to see what you will learn,
+          then register for it.
+        </p>
+
+        <ul class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5 items-start">
+
+          <!-- FRONTEND -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Frontend development
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Build the websites and apps people see and use, from a blank page to a live site.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>HTML and CSS for responsive layouts</li>
+                <li>JavaScript fundamentals</li>
+                <li>React for interactive apps</li>
+                <li>Publishing your work online</li>
+              </ul>
+
+              <a href="#" data-register data-track="frontend"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Frontend
+              </a>
+            </details>
+          </li>
+
+
+          <!-- BACKEND -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Backend development
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Build the servers, databases and APIs that power apps behind the scenes.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Server-side programming</li>
+                <li>Designing and building APIs</li>
+                <li>Databases and storing data safely</li>
+                <li>User login and deployment</li>
+              </ul>
+
+              <a href="#" data-register data-track="backend"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Backend
+              </a>
+            </details>
+          </li>
+
+
+          <!-- CYBERSECURITY -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Cybersecurity
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Learn how systems get attacked and how to defend them.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Security and networking fundamentals</li>
+                <li>Common attacks and how to stop them</li>
+                <li>Protecting accounts, data and websites</li>
+                <li>Ethical hacking basics</li>
+              </ul>
+
+              <a href="#" data-register data-track="cybersecurity"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Cybersecurity
+              </a>
+            </details>
+          </li>
+
+
+          <!-- DATA ANALYSIS -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Data analysis
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Turn raw data into clear answers that help people make decisions.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Cleaning and organising data</li>
+                <li>Spreadsheets and SQL</li>
+                <li>Charts and dashboards</li>
+                <li>Presenting your findings</li>
+              </ul>
+
+              <a href="#" data-register data-track="data-analysis"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Data Analysis
+              </a>
+            </details>
+          </li>
+
+
+          <!-- UI/UX -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                UI/UX design
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Design apps and websites that are easy and pleasant to use.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>User research and user flows</li>
+                <li>Wireframes and visual design</li>
+                <li>Interactive prototypes</li>
+                <li>Testing designs with real users</li>
+              </ul>
+
+              <a href="#" data-register data-track="ui-ux"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join UI/UX
+              </a>
+            </details>
+          </li>
+
+
+          <!-- GRAPHIC DESIGN -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Graphic design 
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Create strong visuals, with AI tools as part of your workflow.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Layout, colour and typography</li>
+                <li>Designing posts, flyers and logos</li>
+                <li>Using AI tools to create and refine images</li>
+                <li>Preparing files for print and social media</li>
+              </ul>
+
+              <a href="#" data-register data-track="graphic-design-ai"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Graphic Design
+              </a>
+            </details>
+          </li>
+
+          <!-- Artificial Intelligence -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+            <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Artificial Intelligence
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+          
+          
+              <p class="text-muted text-sm my-4">
+                Learn how to use AI tools to create content, solve problems and work smarter.
+              </p>
+          
+          
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+          
+          
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Understanding AI and how it works</li>
+                <li>Writing effective AI prompts</li>
+                <li>Using AI for text, images and research</li>
+                <li>Creating presentations, documents and content with AI</li>
+                <li>Using AI safely, responsibly and creatively</li>
+              </ul>
+          
+          
+              <a href="#" data-register data-track="artificial-intelligence"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Artificial Intelligence
+              </a>
+            </details>
+          </li>
+
+          <!-- CONTENT CREATION -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                YouTube and content creation
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Plan, film and grow content that people want to watch.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Finding ideas and writing scripts</li>
+                <li>Filming and editing videos</li>
+                <li>Thumbnails and titles</li>
+                <li>Growing and managing a channel</li>
+              </ul>
+
+              <a href="#" data-register data-track="content-creation"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Content Creation
+              </a>
+            </details>
+          </li>
+
+
+          <!-- DIGITAL LITERACY -->
+          <li class="bg-surface border border-line border-l-[6px] border-l-brand rounded-xl p-5">
+           <details class="track-details" name="cohort8-tracks">
+              <summary
+                class="cursor-pointer font-heading font-semibold flex justify-between items-center gap-3 min-h-11">
+                Digital literacy
+                <span class="track-toggle text-2xl text-brand" aria-hidden="true"></span>
+              </summary>
+
+              <p class="text-muted text-sm my-4">
+                Get confident with computers, the internet and the tools used every day at work.
+              </p>
+
+              <p class="font-semibold text-sm mb-2">You will learn</p>
+
+              <ul class="list-disc pl-5 text-sm text-muted space-y-2 mb-5">
+                <li>Using computers and phones with confidence</li>
+                <li>Searching, browsing and staying safe online</li>
+                <li>Email, documents and spreadsheets</li>
+                <li>Productivity tools for work and study</li>
+              </ul>
+
+              <a href="#" data-register data-track="digital-literacy"
+                class="inline-flex bg-cyan text-oncyan font-semibold px-5 py-3 rounded-lg">
+                Join Digital Literacy
+              </a>
+            </details>
+          </li>
+
+        </ul>
+
+      </div>
+
+    </section>
+
+
+    <!-- BONUS TRACK -->
+    <section class="bg-cyan text-oncyan px-5 md:px-12 lg:px-20 py-12">
+
+      <div class="max-w-7xl mx-auto">
+        <h2 class="font-heading font-bold text-3xl mb-4">Bonus track</h2>
+
+        <p class="text-lg max-w-3xl mb-0">
+          Personal branding comes free with every track. Whatever you choose,
+          you also learn to present your skills, build your online presence
+          and get noticed.
+        </p>
+      </div>
+
+    </section>
+
+
+    <!-- HOW TO JOIN -->
+    <section id="how" class="px-5 md:px-12 lg:px-20 py-16 md:py-20">
+
+      <div class="max-w-7xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-8">
+          How to join
+        </h2>
+
+        <ol class="grid sm:grid-cols-2 lg:grid-cols-3 gap-5">
+
+          <li class="bg-surface border border-line rounded-xl p-6">
+            <span class="font-mono text-sm text-brand">01</span>
+            <h3 class="font-heading font-semibold text-xl mt-3 mb-2">
+              Choose and register
+            </h3>
+            <p class="text-muted text-sm mb-0">
+              Pick your track and how you will attend, and fill in your details.
+              It takes a few minutes.
+            </p>
+          </li>
+
+          <li class="bg-surface border border-line rounded-xl p-6">
+            <span class="font-mono text-sm text-brand">02</span>
+            <h3 class="font-heading font-semibold text-xl mt-3 mb-2">
+              Pay to secure your seat
+            </h3>
+            <p class="text-muted text-sm mb-0">
+              Pay by bank transfer using your reference.
+              We confirm within 24 hours.
+            </p>
+          </li>
+
+          <li class="bg-surface border border-line rounded-xl p-6">
+            <span class="font-mono text-sm text-brand">03</span>
+            <h3 class="font-heading font-semibold text-xl mt-3 mb-2">
+              Show up on January 30
+            </h3>
+            <p class="text-muted text-sm mb-0">
+              Join orientation, then classes begin on February 1.
+            </p>
+          </li>
+
+        </ol>
+
+      </div>
+
+    </section>
+
+
+    <!-- LEARNING MODES -->
+    <section id="modes" class="bg-surface border-y border-line px-5 md:px-12 lg:px-20 py-16">
+
+      <div class="max-w-7xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-4">
+          Learn your way
+        </h2>
+
+        <p class="text-muted mb-8">
+          You choose how to attend when you register.
+        </p>
+
+        <div class="grid md:grid-cols-2 gap-6">
+
+          <article class="bg-page border border-line border-t-[6px] border-t-brand rounded-xl p-7">
+            <h3 class="font-heading font-semibold text-xl mb-3">Physical</h3>
+            <p class="text-muted mb-0">
+              Learn in person at the academy, alongside your cohort,
+              with help face to face.
+            </p>
+          </article>
+
+          <article class="bg-page border border-line border-t-[6px] border-t-cyan rounded-xl p-7">
+            <h3 class="font-heading font-semibold text-xl mb-3">Virtual</h3>
+            <p class="text-muted mb-0">
+              Join live from wherever you are, with the same programme
+              and the same track.
+            </p>
+          </article>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEES -->
+    <section id="fees" class="text-center px-5 md:px-12 py-20 bg-brand text-page">
+
+      <div class="max-w-3xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-5">
+          Half price for Cohort 8
+        </h2>
+
+        <p class="text-page line-through text-xl mb-1">₦200,000</p>
+
+        <p class="font-heading font-extrabold text-5xl sm:text-6xl md:text-7xl mb-5">
+          <data value="100000">₦100,000</data>
+        </p>
+
+        <p class="text-page mb-8">
+          One payment secures your seat, whether you learn in person or online.
+        </p>
+
+        <a href="#" data-register
+          class="inline-flex bg-cyan text-oncyan font-heading font-semibold px-8 py-4 rounded-xl hover:brightness-110 transition">
+          Secure your seat
+        </a>
+
+      </div>
+
+    </section>
+
+
+    <!-- WHY ATTUEYI -->
+    <section class="px-5 md:px-12 lg:px-20 py-16">
+
+      <div class="max-w-7xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-8">
+          Why Attueyi Coding Academy
+        </h2>
+
+        <ul class="grid sm:grid-cols-2 gap-8 mb-10">
+
+          <li class="border-t-4 border-cyan pt-4">
+            <strong class="font-heading font-bold text-2xl block mb-2">
+              300+ learners trained
+            </strong>
+            <p class="text-muted mb-0">Across 9 tracks.</p>
+          </li>
+
+          <li class="border-t-4 border-cyan pt-4">
+            <strong class="font-heading font-bold text-2xl block mb-2">
+              Hybrid learning
+            </strong>
+            <p class="text-muted mb-0">Physical or virtual, your choice.</p>
+          </li>
+
+        </ul>
+
+        <figure class="bg-surface border-l-[6px] border-cyan rounded-xl p-6 max-w-7xl">
+          <h2 class="font-bold text-2xl mb-6">Testimonials</h2>
+          <ul class="grid md:grid-cols-2 lg:grid-cols-3 gap-6 items-start">
+          
+            <!-- Testimonial 1 -->
+            <li class="bg-surface border border-line border-t-[6px] border-t-brand rounded-xl p-6 flex flex-col">
+              <figure class="m-0 flex flex-col h-full">
+                <blockquote class="text-muted leading-relaxed flex-1">
+                  <p class="m-0">
+                    “Learning with Attueyi Coding Academy has been easy. I have learnt how to clean data,
+                    visualise data and conduct research using Excel and SQL. The class schedule is favourable
+                    and well structured. The tutors are knowledgeable and carry everyone along.”
+                  </p>
+                </blockquote>
+          
+                <figcaption class="mt-6 pt-4 border-t border-line">
+                  <p class="font-heading font-semibold text-ink m-0">Maureen Ogechi</p>
+                  <p class="text-sm text-muted m-0">Data Analysis</p>
+                </figcaption>
+              </figure>
+            </li>
+          
+          
+            <!-- Testimonial 2 -->
+            <li class="bg-surface border border-line border-t-[6px] border-t-cyan rounded-xl p-6 flex flex-col">
+              <figure class="m-0 flex flex-col h-full">
+                <blockquote class="text-muted leading-relaxed flex-1">
+                  <p class="m-0">
+                    “Attueyi gave me a great head start to break into the tech space through Cybersecurity.”
+                  </p>
+                </blockquote>
+          
+                <figcaption class="mt-6 pt-4 border-t border-line">
+                  <p class="font-heading font-semibold text-ink m-0">Uchechukwu Solomon</p>
+                  <p class="text-sm text-muted m-0">Cybersecurity</p>
+                </figcaption>
+              </figure>
+            </li>
+          
+          
+            <!-- Testimonial 3 -->
+            <li class="bg-surface border border-line border-t-[6px] border-t-brand rounded-xl p-6 flex flex-col">
+              <figure class="m-0 flex flex-col h-full">
+                <blockquote class="text-muted leading-relaxed flex-1">
+                  <p class="m-0">
+                    “Attueyi Coding Academy gave me both casual and professional knowledge, from audience
+                    segmentation to storytelling, strategy and visual content creation. There was ample
+                    opportunity to practise what I learnt, and the tutors are very patient and carry everyone along.”
+                  </p>
+                </blockquote>
+          
+                <figcaption class="mt-6 pt-4 border-t border-line">
+                  <p class="font-heading font-semibold text-ink m-0">Edeh Shalom Samuel</p>
+                  <p class="text-sm text-muted m-0">Content Creation</p>
+                </figcaption>
+              </figure>
+            </li>
+          </ul>
+
+        </figure>
+
+      </div>
+
+    </section>
+
+
+    <!-- FAQ -->
+    <section id="faq" class="px-5 md:px-12 lg:px-20 py-16">
+
+      <div class="max-w-4xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-4xl mb-8">
+          Questions
+        </h2>
+
+        <div class="space-y-3">
+
+          <details class="bg-surface border border-line rounded-xl px-5 py-3">
+            <summary class="cursor-pointer font-heading font-semibold min-h-12 flex items-center">
+              When does registration open?
+            </summary>
+            <p class="text-muted text-sm pb-3">
+              Registration opens on November 30th. Orientation is on January 30
+              and classes start on February 1.
+            </p>
+          </details>
+
+          <details class="bg-surface border border-line rounded-xl px-5 py-3">
+            <summary class="cursor-pointer font-heading font-semibold min-h-12 flex items-center">
+              How do I pay?
+            </summary>
+            <p class="text-muted text-sm pb-3">
+              After you register, you get our bank details and a payment reference.
+              Transfer the fee using that reference, and we confirm your payment within 24 hours.
+            </p>
+          </details>
+
+          <details class="bg-surface border border-line rounded-xl px-5 py-3">
+            <summary class="cursor-pointer font-heading font-semibold min-h-12 flex items-center">
+              Can I learn online?
+            </summary>
+            <p class="text-muted text-sm pb-3">
+              Yes. Choose virtual when you register, and join live from anywhere.
+            </p>
+          </details>
+
+          <details class="bg-surface border border-line rounded-xl px-5 py-3">
+            <summary class="cursor-pointer font-heading font-semibold min-h-12 flex items-center">
+              Can I pick more than one track?
+            </summary>
+            <p class="text-muted text-sm pb-3">
+              You choose one track. Personal branding is included with it.
+            </p>
+          </details>
+
+          <details class="bg-surface border border-line rounded-xl px-5 py-3">
+            <summary class="cursor-pointer font-heading font-semibold min-h-12 flex items-center">
+              I have another question.
+            </summary>
+            <p class="text-muted text-sm pb-3">
+              Message us on
+              <a href="#" data-whatsapp class="text-brand underline font-semibold">WhatsApp</a>
+              and we will help.
+            </p>
+          </details>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FINAL CTA -->
+    <section class="bg-brand text-page text-center px-5 md:px-12 py-16 md:py-20">
+
+      <div class="max-w-3xl mx-auto">
+
+        <h2 class="font-heading font-bold text-3xl md:text-5xl mb-5">
+          Your seat is waiting.
+        </h2>
+
+        <p class="text-lg text-page/90 mb-8">
+          Classes start February 1. Registration opens this November.
+        </p>
+
+        <div class="flex flex-wrap justify-center gap-4">
+
+          <a href="#" data-register
+            class="bg-cyan text-oncyan font-heading font-semibold px-7 py-4 rounded-xl hover:brightness-110 transition">
+            Register for Cohort 8
+          </a>
+
+          <a href="#" data-whatsapp
+            class="border-2 border-page text-page font-heading font-semibold px-7 py-4 rounded-xl hover:bg-white/10 transition">
+            Chat on WhatsApp
+          </a>
+
+        </div>
+
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- FOOTER -->
+  <footer class="bg-brand text-page border-t border-white/10 px-5 md:px-12 py-8 text-sm">
+
+    <div class="max-w-7xl mx-auto flex flex-col sm:flex-row justify-between gap-4">
+
+      <p class="mb-0">
+        © 2026 Attueyi Coding Academy. All rights reserved.
+      </p>
+
+      <a href="#top" class="text-cyan hover:underline">
+        Back to top ↑
+      </a>
+
+    </div>
+
+  </footer>
+
+
+  <!-- MOBILE STICKY REGISTRATION BUTTON -->
+  <nav aria-label="Register"
+    class="md:hidden fixed bottom-0 left-0 right-0 z-50 bg-brand border-t border-white/20 px-4 py-3">
+    <a href="#" data-register
+      class="block w-full text-center bg-cyan text-oncyan font-heading font-semibold px-5 py-3 rounded-xl">
+      Secure your seat
+    </a>
   </nav>
-</header>
 
-<main id="top">
-  <section aria-labelledby="hero-h">
-    <p class="kicker">Attueyi Coding Academy · Cohort 8</p>
-    <h1 id="hero-h">Start 2027 with a skill <br> that <em>pays.</em></h1>
-    <p>8 tracks, hybrid learning mode, and get Cohort 8 at half price. Your payment secures your seat.</p>
-    <dl class="facts">
-      <section><dt>Registration</dt><dd>Opens in November</dd></section>
-      <section><dt>Orientation</dt><dd><time datetime="2027-01-30">January 30</time></dd></section>
-      <section><dt>Classes start</dt><dd><time datetime="2027-02-01">February 1</time></dd></section>
-      <section><dt>Cohort 8 fee</dt><dd>₦100,000 <del>₦200,000</del></dd></section>
-    </dl>
-    <p>
-      <a href="#" target="_blank" data-register>Register for Cohort 8</a>
-      <a href="#" data-whatsapp>Ask us on WhatsApp</a></p>
-  </section>
 
-  <section id="tracks" aria-labelledby="tracks-h">
-    <h2 id="tracks-h">Choose your track</h2>
-    <p>Eight tracks, one cohort. Open a track to see what you will learn, then register for it.</p>
-    <ul class="tracks">
-      <li><details><summary><h3>Frontend development</h3></summary>
-        <p>Build the websites and apps people see and use, from a blank page to a live site.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>HTML and CSS for responsive layouts</li><li>JavaScript fundamentals</li><li>React for interactive apps</li><li>Publishing your work online</li></ul>
-        <a href="#" data-register data-track="frontend">Join Frontend</a></details></li>
-      <li><details><summary><h3>Backend development</h3></summary>
-        <p>Build the servers, databases and APIs that power apps behind the scenes.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Server-side programming</li><li>Designing and building APIs</li><li>Databases and storing data safely</li><li>User login and deployment</li></ul>
-        <a href="#" data-register data-track="backend">Join Backend</a></details></li>
-      <li><details><summary><h3>Cybersecurity</h3></summary>
-        <p>Learn how systems get attacked and how to defend them.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Security and networking fundamentals</li><li>Common attacks and how to stop them</li><li>Protecting accounts, data and websites</li><li>Ethical hacking basics</li></ul>
-        <a href="#" data-register data-track="cybersecurity">Join Cybersecurity</a></details></li>
-      <li><details><summary><h3>Data analysis</h3></summary>
-        <p>Turn raw data into clear answers that help people make decisions.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Cleaning and organising data</li><li>Spreadsheets and SQL</li><li>Charts and dashboards</li><li>Presenting your findings</li></ul>
-        <a href="#" data-register data-track="data-analysis">Join Data Analysis</a></details></li>
-      <li><details><summary><h3>UI/UX design</h3></summary>
-        <p>Design apps and websites that are easy and pleasant to use.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>User research and user flows</li><li>Wireframes and visual design</li><li>Interactive prototypes</li><li>Testing designs with real users</li></ul>
-        <a href="#" data-register data-track="ui-ux">Join UI/UX</a></details></li>
-      <li><details><summary><h3>Graphic design and AI</h3></summary>
-        <p>Create strong visuals, with AI tools as part of your workflow.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Layout, colour and typography</li><li>Designing posts, flyers and logos</li><li>Using AI tools to create and refine images</li><li>Preparing files for print and social media</li></ul>
-        <a href="#" data-register data-track="graphic-design-ai">Join Graphic Design</a></details></li>
-      <li><details><summary><h3>YouTube and content creation</h3></summary>
-        <p>Plan, film and grow content that people want to watch.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Finding ideas and writing scripts</li><li>Filming and editing videos</li><li>Thumbnails and titles</li><li>Growing and managing a channel</li></ul>
-        <a href="#" data-register data-track="content-creation">Join Content Creation</a></details></li>
-      <li><details><summary><h3>Digital literacy</h3></summary>
-        <p>Get confident with computers, the internet and the tools used every day at work.</p>
-        <p><strong>You will learn</strong></p>
-        <ul><li>Using computers and phones with confidence</li><li>Searching, browsing and staying safe online</li><li>Email, documents and spreadsheets</li><li>Productivity tools for work and study</li></ul>
-        <a href="#" data-register data-track="digital-literacy">Join Digital Literacy</a></details></li>
-    </ul>
-  </section>
+  <!-- REGISTRATION AND WHATSAPP CONFIGURATION -->
+  <script>
+    /* ===== EDIT THESE ===== */
 
-  <section aria-labelledby="inc-h">
-    <h2 id="inc-h">Bonus track</h2>
-    <p>Personal branding comes free with every track. Whatever you choose, you also learn to present your skills, build your online presence and get noticed.</p>
-  </section>
+    const REGISTER_URL = "https://attueyicoding.academy/register";
 
-  <section id="how" aria-labelledby="how-h">
-    <h2 id="how-h">How to join</h2>
-    <ol class="steps">
-      <li><strong>Choose and register</strong><p>Pick your track and how you will attend, and fill in your details. It takes a few minutes.</p></li>
-      <li><strong>Pay to secure your seat</strong><p>Pay by bank transfer using your reference. We confirm within 24 hours.</p></li>
-      <li><strong>Show up on January 30</strong><p>Join orientation, then classes begin on <time datetime="2027-02-01">February 1</time>.</p></li>
-    </ol>
-  </section>
+    const WHATSAPP_NUMBER = "2348162323745";
 
-  <section id="modes" aria-labelledby="modes-h">
-    <h2 id="modes-h">Learn your way</h2>
-    <p>You choose how to attend when you register.</p>
-    <article><h3>Physical</h3><p>Learn in person at the academy, alongside your cohort, with help face to face.</p></article>
-    <article><h3>Virtual</h3><p>Join live from wherever you are, with the same programme and the same track.</p></article>
-  </section>
+    const UTM = "utm_source=landing&utm_medium=web&utm_campaign=cohort-8";
 
-  <section id="fees" aria-labelledby="fees-h">
-    <h2 id="fees-h">Half price for Cohort 8</h2>
-    <p><del>₦200,000</del></p>
-    <p class="price"><data value="100000">₦100,000</data></p>
-    <p>One payment secures your seat, whether you learn in person or online.</p>
-    <p><a href="#" target="_blank" data-register>Secure your seat</a></p>
-  </section>
+    /* ====================== */
 
-  <section aria-labelledby="proof-h">
-    <h2 id="proof-h">Why Attueyi Coding Academy</h2>
-    <ul class="proof">
-      <li><strong>300+ learners trained</strong><p>across 8 tracks</p></li>
-      <li><strong>Hybrid learning</strong><p>Physical or virtual, your choice.</p></li>
-    </ul>
-    <figure>
-      <blockquote><p>Testimonial: a short quote from a past student about what changed for them]</p></blockquote>
-      <figcaption>[Student name, track, cohort]</figcaption>
-    </figure>
-  </section>
+    try {
 
-  <section id="faq" aria-labelledby="faq-h">
-    <h2 id="faq-h">Questions</h2>
-    <details><summary>When does registration open?</summary><p>Registration opens in November. Orientation is on January 30 and classes start on February 1.</p></details>
-    <details><summary>How do I pay?</summary><p>After you register, you get our bank details and a payment reference. Transfer the fee using that reference, and we confirm your payment within 24 hours.</p></details>
-    <details><summary>Can I learn online?</summary><p>Yes. Choose virtual when you register, and join live from anywhere.</p></details>
-    <details><summary>Can I pick more than one track?</summary><p>You choose one track. Personal branding is included with it.</p></details>
-    <details><summary>I have another question.</summary><p>Message us on <a href="#" data-whatsapp>WhatsApp</a> and we will help.</p></details>
-  </section>
+      const sep = REGISTER_URL.includes("?") ? "&" : "?";
 
-  <section aria-labelledby="final-h">
-    <h2 id="final-h">Your seat for is waiting</h2>
-    <p>Classes start February 1. Register in November and learn at half price.</p>
-    <p><a href="#" target="_blank" data-register>Register for Cohort 8</a><a href="#" data-whatsapp>Chat on WhatsApp</a></p>
-  </section>
-</main>
+      document.querySelectorAll("a[data-register]").forEach(a => {
 
-<nav aria-label="Register">
-  <a href="#" target="_blank" data-register>Secure your seat</a>
-</nav>
+        const p = new URLSearchParams(UTM);
 
-<script>
-/* ===== EDIT THESE ===== */
-const REGISTER_URL = "https://attueyicoding.academy/register"; // the registration modal opens via ?enroll=
-const WHATSAPP_NUMBER = "234XXXXXXXXXX"; // country code + number, no + or spaces
-const UTM = "utm_source=landing&utm_medium=web&utm_campaign=cohort-8";
-/* ====================== */
-try {
-  const sep = REGISTER_URL.includes("?") ? "&" : "?";
-  document.querySelectorAll("a[data-register]").forEach(a => {
-    const p = new URLSearchParams(UTM);
-    new URLSearchParams(location.search).forEach((v, k) => p.set(k, v));
-    p.set("enroll", a.dataset.track || "1");
-    a.href = REGISTER_URL + sep + p.toString();
-  });
-  const msg = encodeURIComponent("Hello, I'd like to know more about Cohort 8.");
-  document.querySelectorAll("a[data-whatsapp]").forEach(a => {
-    a.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + msg;
-    a.target = "_blank"; a.rel = "noopener";
-  });
-} catch (e) {}
-</script>
-</body>
+        new URLSearchParams(location.search).forEach((v, k) => {
+          p.set(k, v);
+        });
+
+        p.set("enroll", a.dataset.track || "1");
+
+        a.href = REGISTER_URL + sep + p.toString();
+
+      });
+
+
+      const msg = encodeURIComponent(
+        "Hello, I'd like to know more about Cohort 8."
+      );
+
+      document.querySelectorAll("a[data-whatsapp]").forEach(a => {
+
+        a.href = "https://wa.me/" + WHATSAPP_NUMBER + "?text=" + msg;
+
+        a.target = "_blank";
+
+        a.rel = "noopener";
+
+      });
+
+    } catch (e) {
+      console.error("Link configuration error:", e);
+    }
+
+  </script>
+
+  </body>
+
 </html>
